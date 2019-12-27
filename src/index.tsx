@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './resource/style/index.scss';
 import IndexRouter from './router'
 import * as serviceWorker from './serviceWorker';
+import './js/rem'
 
 ReactDOM.render(<IndexRouter />, document.getElementById('root'));
 
