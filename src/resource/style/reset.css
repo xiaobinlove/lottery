@@ -1,0 +1,55 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,a,abbr,address,big,em,img,q,small,strike,strong,
+sub,sup,tt,var,i,dl,dt,dd,ol,ul,li,form,fieldset,label,table,caption,tbody,thead,tfoot,tr,th,td,article,
+aside,canvas,details,figure,figcaption,header,footer,hgroup,menu,nav,output,section,time,mark,audio,
+video,input,select,button{margin:0;padding:0;border:0;font-family:'微软雅黑',Arial}
+/*去除默认样式*/
+ul,ol,li{list-style:none;}
+/*表格边框合并，边框距零*/
+table{border-collapse:collapse;border-spacing:0;}
+/*继承父元素的字体系列样式*/
+input,select,textarea,button{font-family:inherit;}
+/*a链接*/
+a{text-decoration:none;color:#000;}
+a:hover{text-decoration:none;}
+/*去除点击高亮效果*/
+a,button,input,select,img,label{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;outline:medium none;}
+input::-moz-focus-inner{border:none;padding:0;}
+select, input{vertical-align:middle;}
+/*去掉苹果的默认UI来渲染按钮*/
+input[type="submit"],input[type="reset"],input[type="button"],button,select{-webkit-appearance:none;}
+/*placeholder文本颜色*/
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+  color:#ADADAD;
+}
+input:-moz-placeholder,textarea:-moz-placeholder{
+  color:#ADADAD;
+}
+/*html5标签*/
+header,footer,section,article,aside,nav,figure{display:block;}
+/*长英文字母 数字 换行*/
+p{word-break:break-all;word-wrap:break-word;}
+/*去除默认样式*/
+h1,h2,h3,h4,h5,h6,strong,i,em,address, caption, cite, code, dfn, th, var{font-weight:normal;font-style:normal;}
+fieldset, img{border:none;display:block;}
+/*去除长按a链接弹框 去除点击高亮*/
+html,body{-webkit-touch-callout:none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+body{
+  /*iPhone 和 Android 的浏览器纵向 (Portrate mode) 和橫向 (Landscape mode) 模式皆有自动调整字体大小的功能。控制它的就是 CSS 中的 -webkit-text-size-adjust。text-size-adjust 设为 none 或者 100% 关闭字体大小自动调整功能.*/
+  -webkit-text-size-adjust:100%;
+  /*比如在图片或者链接上，希望不出现被选中的颜色，可以怎么做呢？其实我们可以将属性-webkit-tap-highlight-color的值设置为透明就可以实现。当然也可以设置成其他颜色，也支持rgba*/
+  -webkit-tap-highlight-color:transparent;
+}
+*:not(input,textarea) {
+  /*长按屏幕时会禁止设备弹出列表按钮*/
+  -webkit-touch-callout: none;
+  /*之所以放在这里是因为如果放到body中会导致个别Android机型（Google  Nexus，Android 4.2.2）输入框无法输入*/
+  -webkit-user-select: none;
+}
+/*用来改变按钮和其他控件的外观,加上这个以后，select的高度就可以改变了。所以，当然也可以用于其他浏览器控件中*/
+select{-webkit-appearance:none;}
+/*防止获取焦点时，出现边框*/
+:focus {
+  outline:0;
+  -webkit-tap-highlight-color:transparent
+}
