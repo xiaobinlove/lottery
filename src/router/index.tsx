@@ -9,8 +9,11 @@ class IndexRouter extends React.Component<any, any> {
     return (
       <Router>
         <Switch>
+          {/* 介绍页 */}
           <Route path={'/'} exact component={Introduction} />
+          {/* 抽奖 */}
           <Route path={'/lottery'} component={Lottery} />
+          {/* 领奖 */}
           <Route path={'/receiveAward'} component={ReceiveAward}></Route>
         </Switch>
       </Router>

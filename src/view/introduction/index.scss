@@ -1,5 +1,34 @@
-.test {
-  height: 30px;
-  width: 375px;
-  background: red;
+@import "../../resource/style/var";
+.#{$css-prefix}introduction-view {
+  position: relative;
+  &-img {
+    display: block;
+    width: 100%;
+    height: 1333px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  &-enter {
+    box-sizing: border-box;
+    padding: 0 81px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 58px;
+    width: 100%;
+    height: 70px;
+  }
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:240px;
+    height: 100%;
+    background:linear-gradient(0deg,rgba(255,162,46,1) 0%,rgba(255,206,116,1) 100%);
+    box-shadow:0px 4px 7px 0px rgba(173,14,27,0.5);
+    border-radius:35px;
+    color: #CB2221;
+    cursor: pointer;
+  }
 }

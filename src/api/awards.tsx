@@ -1,5 +1,5 @@
 import axios from './axios';
-
-export const getAwards = () => {//定义schema
+// 奖品列表
+export const getAwards = () => {
     return axios.get('/awards');
 }

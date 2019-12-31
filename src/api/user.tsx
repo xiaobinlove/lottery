@@ -1,5 +1,5 @@
 import axios from './axios';
-
-export const login = (data?:any) => {//定义schema
+// 用户登记
+export const login = (data?:any) => {
     return axios.post('/users',data);
 }
