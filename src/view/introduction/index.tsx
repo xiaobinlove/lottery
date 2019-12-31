@@ -2,7 +2,7 @@ import React from 'react'
 import './index.scss'
 const Introduction = () => {
   return (
-    <div className={'test'}>介绍</div>
+    <div className={''}>介绍</div>
   )
 }
 // class Introduction extends React.Component<any, any> {

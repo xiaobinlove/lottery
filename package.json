@@ -8,12 +8,16 @@
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
+    "@types/qs": "^6.9.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "antd-mobile": "^2.3.1",
+    "axios": "^0.19.0",
     "babel-plugin-import": "^1.13.0",
     "fastclick": "^1.0.6",
+    "http-proxy-middleware": "^0.20.0",
     "postcss-pxtorem": "^4.0.1",
+    "qs": "^6.9.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-fastclick": "^3.0.2",
@@ -47,5 +51,6 @@
     "node-sass": "^4.13.0",
     "react-app-rewired": "^2.1.5",
     "sass-loader": "^8.0.0"
-  }
+  },
+  "proxy": "https://tnhcjapi.1hykj.com"
 }
