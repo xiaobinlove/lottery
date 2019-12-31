@@ -1,11 +1,13 @@
-import React, { useEffect, FC } from 'react'
+import React, { useEffect, FC, useState } from 'react'
 import { RouteComponentProps } from 'react-router-dom'
 import { getAwards } from '../../api/awards'
+import { Modal } from 'antd-mobile'
 import { staffsInfo } from "../../api/lottery-info";
 import { PRE_FIX } from '../../config'
 import './index.scss'
 const prefixClass = `${PRE_FIX}lottery-view`
 const Lottery: FC<RouteComponentProps> = ({ history }) => {
+  const [loginModal, setLoginModal] = useState(true)
   useEffect(() => {
     console.log('useEffect')
     // getAwards().then(data => {
@@ -45,6 +47,15 @@ const Lottery: FC<RouteComponentProps> = ({ history }) => {
           </div>
         </div>
       </div>
+      <Modal
+        visible={loginModal}
+        transparent
+        maskClosable={false}
+        onClose={ () => { setLoginModal(false) } }
+      >
+        <div className={`${prefixClass}-login-content`}>
+        </div>
+      </Modal>
     </div>
   );
 }

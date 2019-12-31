@@ -121,3 +121,18 @@
     }
   }
 }
+.am-modal-transparent {
+  width: 600 / 75rem;
+}
+.am-modal-transparent .am-modal-content {
+  padding-top: 0;
+}
+.am-modal-transparent .am-modal-content .am-modal-body {
+  padding: 0 0 0;
+}
+.#{$css-prefix}lottery-view-login-content {
+  //width: 600px;
+  //height: 500px;
+  width: 750px;
+  height: 100px;
+}
