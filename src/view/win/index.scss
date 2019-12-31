@@ -1,0 +1,27 @@
+.win {
+  width: 750px;
+  height: 200px;
+
+  .header {
+    background-image: url('../../resource/image/record/header_record.png');
+    background-size: 100%;
+    height: 200px;
+  }
+
+  .win-content {
+    padding-top: 49px;
+    width: 687px;
+    height: 241px;
+    font-size: 26px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 36px;
+    margin: 0 auto;
+
+    p:not(:first-child) {
+      margin-top: 36px;
+    }
+
+  }
+}

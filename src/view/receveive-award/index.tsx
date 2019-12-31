@@ -1,16 +1,5 @@
-import React, { useState, MouseEventHandler } from 'react'
-interface IProps {
-  onClick: MouseEventHandler<HTMLDivElement>
-}
+import * as React from 'react'
 function ReceiveAward() {
-  const [count, setCount] = useState(0)
-  return (
-    <div>
-      {count}
-      {/*<div onClick={setCount(count + 1)}>*/}
-      {/*  +1*/}
-      {/*</div>*/}
-    </div>
-  )
+  return <div>test</div>
 }
 export default ReceiveAward

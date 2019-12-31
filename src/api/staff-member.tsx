@@ -8,3 +8,6 @@ export const staffs  = (data?:any) => {
 export const staffsAward  = (data?:any) => {
   return axios.post('/staffs/award',data);
 }
+export const winInfo = (data?: any) => {
+    return axios.get('/raffles/' + data)
+}
