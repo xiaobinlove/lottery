@@ -2,7 +2,7 @@
 import axios from './axios';
 // 最近中奖信息
 export const staffsInfo  = (data?: any) => {
-    return axios.get('/staffs', data);
+    return axios.get('/raffles', data);
 }
 // 抽奖
 export const raffles  = (data?: any) => {
