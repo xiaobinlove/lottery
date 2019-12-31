@@ -1,9 +1,16 @@
 import React, { FC } from 'react'
+import { getRequest } from "../../js/util";
 import { RouteComponentProps } from 'react-router-dom'
+import { getOpenId, setOpenId } from '../../js/util'
 import { PRE_FIX } from '../../config'
 import './index.scss'
 const prefixClass = `${PRE_FIX}introduction-view`
-const Introduction: FC<RouteComponentProps> = ({ history }) => {
+const Introduction: FC<RouteComponentProps> = ({ history, location, match }) => {
+  const searchObj: any = getRequest(location.search)
+  const { openid } = searchObj
+  if (openid) {
+    setOpenId(openid)
+  }
   const handleClick = (path: string) => {
     history.push(path);
   }
