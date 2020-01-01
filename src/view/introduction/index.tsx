@@ -19,7 +19,7 @@ const Introduction: FC<RouteComponentProps> = ({ history, location, match }) => 
       {
         Array.from({length: 15}).map((item, index) => {
           return (
-            <div className={`${prefixClass}-img`} style={{ backgroundImage: `url(${require(`../../resource/image/introduction/${index + 1}.png`)})` }}></div>
+            <div className={`${prefixClass}-img`} key={index} style={{ backgroundImage: `url(${require(`../../resource/image/introduction/${index + 1}.png`)})` }}></div>
           )
         })
       }
